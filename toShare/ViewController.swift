@@ -12,26 +12,40 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBOutlet private weak var collectionView: UICollectionView!
     
-    
-    let cImage = [UIImage(named:"men"),UIImage(named:"men"),UIImage(named:"men")]
+  
+    let imageArray:[String] = ["men", "shirts", "formal"]
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         
         
-        return 3
+        return imageArray.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!CollectionViewCell
-       cell.imageView.image = cImage[indexPath.row]
+        
+        cell.imageView.image = UIImage(named: imageArray[indexPath.row] + ".jpg" )
+        
+        //cell border and collor
         cell.layer.masksToBounds = true
-     //   cell.layer.cornerRadius = 5
-        cell.layer.borderWidth = 1
-       
+        cell.layer.borderWidth = 0.5
+        cell.layer.borderColor = UIColor.gray.cgColor
+        
+//        //image gesture recognization
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.tappedMe))
+//        cell.imageView.addGestureRecognizer(tap)
+//        cell.imageView.isUserInteractionEnabled = true
+        
         
         
         return cell
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as? detailViewController
+        viewController?.name = imageArray[indexPath.row]
+        self.navigationController?.pushViewController(viewController!, animated: true)
         
     }
     
@@ -39,18 +53,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var isMenueHidden = true
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     
         
       //  sideMenuConstraint.constant = -240
         // Do any additional setup after loading the view.
-    }
-    func viewControllerDisplay(){
-        
-        let width = (view.frame.size.width - 10) / 3
-        let height = (view.frame.size.height - 300)
-        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width:width, height:height)
-    }
+   }
+//    @objc func tappedMe(){
+//        print("tapped me" )
+//
+//    }
+//
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

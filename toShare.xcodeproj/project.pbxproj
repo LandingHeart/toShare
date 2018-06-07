@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E3A204D20BDA6FF0098A8B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A204C20BDA6FF0098A8B7 /* CollectionViewCell.swift */; };
+		4E4EAE6820C9922A00E0C3E2 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EAE6720C9922A00E0C3E2 /* detailViewController.swift */; };
 		4E8ECE8F20BC4B44007E2298 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8ECE8E20BC4B44007E2298 /* ViewController.swift */; };
 		4EBE178120B4693E00BD1EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE178020B4693E00BD1EC9 /* AppDelegate.swift */; };
 		4EBE178620B4693E00BD1EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE178420B4693E00BD1EC9 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		4E3A204C20BDA6FF0098A8B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		4E4EAE6720C9922A00E0C3E2 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		4E8ECE8E20BC4B44007E2298 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EBE177D20B4693E00BD1EC9 /* toShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBE178020B4693E00BD1EC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				4EBE178C20B4694000BD1EC9 /* Info.plist */,
 				4E8ECE8E20BC4B44007E2298 /* ViewController.swift */,
 				4E3A204C20BDA6FF0098A8B7 /* CollectionViewCell.swift */,
+				4E4EAE6720C9922A00E0C3E2 /* detailViewController.swift */,
 			);
 			path = toShare;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				4EBE178120B4693E00BD1EC9 /* AppDelegate.swift in Sources */,
 				4E8ECE8F20BC4B44007E2298 /* ViewController.swift in Sources */,
 				4E3A204D20BDA6FF0098A8B7 /* CollectionViewCell.swift in Sources */,
+				4E4EAE6820C9922A00E0C3E2 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
