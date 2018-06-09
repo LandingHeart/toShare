@@ -1,0 +1,6 @@
+framework module Pods_toShare {
+  umbrella header "Pods-toShare-umbrella.h"
+
+  export *
+  module * { export * }
+}

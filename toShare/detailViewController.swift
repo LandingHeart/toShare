@@ -17,7 +17,7 @@ class detailViewController: UIViewController {
         super.viewDidLoad()
        // print(name)
         img.image = UIImage(named: name)
-        
+      
         // Do any additional setup after loading the view.
     }
 
